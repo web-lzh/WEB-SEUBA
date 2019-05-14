@@ -76,18 +76,24 @@ nav a:hover {
 
 @media(orientation: portrait) {
 
+    header {
+        height: 40pt;
+    }
+
     header .fa {
         display: inline-block;
         position: absolute;
-        font-size: 50px;
-        margin-top: 5px;
-        margin-left: 20px;
+        font-size: 30pt;
+        margin-top: 7pt;
+        margin-left: 10pt;
         color: white;
     }
 
     header img {
         margin-left: 50%;
         transform: translate(-50%);
+        height: 30pt;
+        margin-top: 5pt;
     }
 
     nav {
