@@ -13,8 +13,8 @@ body {
 /** Nav **/
 
 nav {
-    height: 50px;
-    background-color: rgba(31, 74, 153, 1.00);
+    height: 60px;
+    background-color: rgba(152, 207, 255, 1.00);
 }
 
 nav a {
@@ -24,23 +24,21 @@ nav a {
     text-align: center;
     text-decoration: none;
     font-size: 1.25vw;
-    color: white;
-    height: 50px;
-    line-height: 55px;
+    color: rgba(31, 74, 153, 1.00);
+    height: 60px;
+    line-height: 60px;
     font-weight: bold;
-    border-bottom: 5px solid rgba(31, 74, 153, 1.00);
+    border-bottom: 5px solid rgba(122, 193, 255, 1.00);
 }
 
 nav a:hover {
-    background-color: rgba(33, 11, 103, 1.00);
-    color: rgba(230, 195, 27, 1.00);
-    transition: ease-in 0.5s;
-    border-bottom: 5px solid rgba(33, 11, 103, 1.00);
+    font-size: 1.4vw;
+    transition: ease-in 0.1s;
 }
 
 .current {
-    background-color: rgba(33, 11, 103, 1.00);
-    color: rgba(230, 195, 27, 1.00);
-    border-bottom: 5px solid rgba(230, 195, 27, 1.00);
+    background-color: rgba(31, 74, 153, 1.00);
+    color: white;
+    border-bottom: 5px solid rgba(255, 187, 22, 1.00);
     
 }
