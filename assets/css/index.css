@@ -4,7 +4,7 @@
 
 .transparent .current, .transparent a {
     background-color: rgba(0, 0, 0, 0);
-    border-top: 5px rgba(0, 0, 0, 0);
+    border-top: 5px solid rgba(0, 0, 0, 0);
 }
 
 
