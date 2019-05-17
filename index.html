@@ -30,6 +30,7 @@
 
             <div id="trends">
                 <h2>动态</h2>
+                <i class="fa fa-angle-down"></i>
                 <div class="subtrends">
                     <img src="images/index/trends1.jpg" alt="">
                     <div class="subtrends-text">
@@ -64,7 +65,7 @@
         var move = 0;
         this.addEventListener('scroll', function() {
             move = window.scrollY;
-            if(move >= p)
+            if(move >= p - 60)
                 h.classList.remove('transparent');
             else h.classList.add('transparent');         
         })

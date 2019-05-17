@@ -1,6 +1,7 @@
 html {
     width: 100%;
     font-size: 20px;
+    height: 2000px;
 }
 
 @media(max-width: 1500px) {
@@ -16,6 +17,10 @@ body {
     background-color: rgba(31, 74, 153, 1.00);
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
 h1 {
     font-size: 3.5rem;
 }
@@ -26,10 +31,6 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
-}
-
-p {
-    margin: 0;
 }
 
 img {
