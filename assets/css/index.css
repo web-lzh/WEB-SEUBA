@@ -1,6 +1,7 @@
 .transparent {
     background: rgba(255, 255, 255, 0);
     background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .transparent a {
@@ -22,6 +23,7 @@ main {
 #poster {
     width: 100%;
     background-color: rgba(31, 74, 153, 1.00);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 #poster img {
@@ -53,6 +55,7 @@ main {
     margin-left: 2.5%;
     margin-top: 2.5%;
     overflow: hidden;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 .subtrends img {
@@ -117,10 +120,12 @@ article {
 article section {
     width: 32.5%;
     background-color: white;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 article img {
     width: 65%;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 #first-article section, #second-article img {
