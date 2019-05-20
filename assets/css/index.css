@@ -1,13 +1,21 @@
 .transparent {
     background: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
-.transparent .current, .transparent a {
+.transparent a {
     background-color: rgba(0, 0, 0, 0);
     border-top: 5px solid rgba(0, 0, 0, 0);
+    border-bottom: 5px solid rgba(0, 0, 0, 0);
 }
 
+.transparent .current {
+    text-shadow: 1px 1px 1px rgba(31, 74, 153, 1.00);
+}
 
+main {
+    position: relative;
+}
 
 /* Poster */
 
@@ -64,6 +72,11 @@
     transition: 0.5s;
 }
 
+.subtrends img:hover +.subtrends-text .subline {
+    color: rgba(0, 0, 0, 0);
+    transition: 0.5s;
+}
+
 .subtrends-text {
     position: absolute;
     width: 30%;
@@ -93,5 +106,66 @@
     width: 20px;
 }
 
+/* Articles */
 
+article {
+    margin-top: 60px;
+    float: left;
+    width: 100%;
+}
 
+article section {
+    width: 32.5%;
+    background-color: white;
+}
+
+article img {
+    width: 65%;
+}
+
+#first-article section, #second-article img {
+    float: left;
+}
+
+#first-article img, #second-article section {
+    float: right;
+}
+
+article section div {
+    display: inline-block;
+    width: auto;
+    margin-top: 50%;
+    margin-left: 5%;
+    transform: translate(0,-50%);
+}
+
+article section h2 {
+    color: rgba(31, 74, 153, 1.00);
+    margin-bottom: 30px;
+}
+
+article section h4 {
+    color: rgba(31, 74, 153, 1.00);
+    margin-top: 30px;
+    font-weight: normal;
+}
+
+/* Footer */
+
+footer {
+    float: left;
+    width: 100%;
+    margin-top: 60px;
+    background-color: rgba(9, 22, 46, 1.00);
+    color: white;
+}
+
+footer li {
+    list-style-type: none;
+    text-align: center;
+    line-height: 35px;
+}
+
+footer li:last-child {
+    margin-top: 30px;
+}

@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>东南大学羽毛球协会</title>
-        <link rel="icon" href="images/logo1.png" type="image/x-icon">
+        <link rel="icon" href="images/logo.png" type="image/x-icon">
         <link rel="stylesheet" href="assets/css/main.css">
         <link rel="stylesheet" href="assets/css/index.css">
         <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -24,10 +24,12 @@
         </header>
 
         <main>
+            <!-- Poster -->
             <div id="poster">
-                <img src="images/index/poster.jpg" alt="">
+                <img src="images/index/poster1.jpg" alt="">
             </div>
 
+            <!-- Trends -->
             <div id="trends">
                 <h2>动态</h2>
                 <i class="fa fa-angle-down"></i>
@@ -55,19 +57,42 @@
                 <h4>更多<i class="fa fa-angle-right"></i></h4>
             </div>
             
-            <article>
+            <!-- Articles -->
+            <article id="first-article">
                 <section>
-
+                    <div>
+                        <h2>我们的理念</h2>
+                        <p>为热爱羽毛球的东大人带来最精彩的羽毛球生活。</p>
+                        <h4>更多<i class="fa fa-angle-right"></i></h4>
+                    </div>
                 </section>
-                <img src="" alt="">
+                <img id="get-height" src="images/index/trends1.jpg" alt="">
+            </article>
+
+            <article id="second-article">
+                <section>
+                    <div>
+                        <h2>我们的工作</h2>
+                        <p>为热爱羽毛球的东大人带来最精彩的羽毛球生活。</p>
+                        <h4>更多<i class="fa fa-angle-right"></i></h4>
+                    </div>
+                </section>
+                <img id="get-height" src="images/index/trends2.jpg" alt="">
             </article>
         </main>
 
         <footer>
+            <ul>
+                <li>东南大学（九龙湖校区）</li>
+                <li>体育馆3号副馆</li>
+                <li>15850609366</li>
+                <li>2011 SEUBA</li>
+            </ul>
         </footer>
     </body>
 
     <script>
+        // nav change class function
         var p = document.getElementById('poster').offsetHeight;
         var h = document.getElementById('header');
         var move = 0;
@@ -77,6 +102,22 @@
                 h.classList.remove('transparent');
             else h.classList.add('transparent');         
         })
+        
+        // set section height
+        var high = document.getElementById('get-height').offsetHeight;
+        var s = document.getElementsByTagName('section');
+        s[0].style.height = high + 'px';
+        s[1].style.height = high + 'px';
+        window.onresize = function() {
+            high = document.getElementById('get-height').offsetHeight;
+            p = document.getElementById('poster').offsetHeight;
+            move = window.scrollY;
+            if(move >= p - 60)
+                h.classList.remove('transparent');
+            else h.classList.add('transparent');
+            s[0].style.height = high + 'px';
+            s[1].style.height = high + 'px';
+        }
         
     </script>
 </html>
