@@ -136,17 +136,17 @@ article section div {
     width: auto;
     margin-top: 50%;
     margin-left: 5%;
-    transform: translate(0,-50%);
+    /* transform: translate(0,-50%); */
 }
 
 article section h2 {
     color: rgba(31, 74, 153, 1.00);
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 article section h4 {
     color: rgba(31, 74, 153, 1.00);
-    margin-top: 30px;
+    margin-top: 60px;
     font-weight: normal;
 }
 
